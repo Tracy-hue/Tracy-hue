@@ -1,56 +1,79 @@
 body {
   background-color : #995A5A;
-  height: 95vh;
+  height: 100vh;
   
   background-repeat: no-repeat;
-
 }
 
 div.frame1{
   position: relative;
   background-image:url(background.png);
-  height: 90%;
-  width: 90%;
+  height: 100vh;
+  width: 95%;
   margin-right: auto;
   margin-left:auto;
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 3%;
-  
+  text-align: center;
+  justify-content: space-around;
 }
 .heading {
-  text-align:center;
-}
-#ulist {
   text-align:center;
 }
 
 .modal-bg {
   position: fixed;
-  width: 90%;
-  height: 90%;
-  /*margin-top: 3%;
-  margin-bottom: 3%;*/
-  background-color:rgba(0,0,0,0.5);
+  width: 94%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacitity 0.5s;
+}
+.modal-btn {
+  padding: 8px 15px;
+  background-color: rgb(28, 101, 211);
+  cursor: pointer;
+  font-family: 'montserrat',sans-serif;
+  border: none;
+  text-size-adjust: bold;
+}
+.bg-active{
+  visibility: visible;
+  opacity: 1;
 }
 
+.modal-close {
+  position:absolute;
+  top: 10px;
+  right: 10px;
+  font: bold;
+  cursor: pointer;
+ }
+
 .modal {
-  background-image:url(background.png);
+  position: relative;
+  background-color:aliceblue;
   width: 30%;
-  height: 30%;
+  height: 35%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
- 
 }
-/* form {
-  text-align : center;
-} */
-
+.save {
+  padding: 8px 15px;
+  background-color: rgb(28, 211, 28);
+  cursor: pointer;
+  font-family: 'montserrat',sans-serif;
+  border: none;
+}
 
 /* .plus-button{
   display: inline-block;
